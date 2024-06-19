@@ -1,0 +1,6 @@
+	* At begining, we dont know the value of d7 register
+move.l  #$99999999,d7	* We set some value to d7 register
+	* Then zero flag = 0
+move.l  #$00000000,d7	* Then set the value of d7 to "0000 0000"
+	*Then zero flag = 1
+	* Because " zero flag = 1 " means the value of register == 0 is True
